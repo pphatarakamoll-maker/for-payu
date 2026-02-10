@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THIS PAGE IS FOR PAYU 💗</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sarabun&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- PAGE 0 : PASSWORD -->
+  <div class="page active" id="page0">
+    <h2>🔒 Password</h2>
+    <h4>Hint: The day we started talking</h4>
+    <input type="password" id="password" placeholder="Enter password">
+    <button class="btn" onclick="checkPassword()">ENTER</button>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="792433205.657909-new.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- PAGE 1 : IMAGES -->
+  <div class="page" id="page1">
+    <h2>Memories 📸</h2>
+    <div class="white-box">
+      <img id="slide" src="S__27459612_0.jpg">
+    </div>
+
+    <div class="controls">
+      <button class="btn" onclick="prevImage()">◀</button>
+      <button class="btn" onclick="nextImage()">▶</button>
+    </div>
+    <button class="btn" onclick="showPage(2)">NEXT PAGE ➜</button>
+
+  </div>
+ 
+
+
+
+  <!-- PAGE 2 : ARE YOU SURE -->
+  <div class="page" id="page2">
+    <h2>Are you sure to go next? 🥺</h2>
+    <button class="btn" onclick="showPage(3)">YES</button>
+    <button class="btn" onclick="showPage(1)">N0</button>
+  </div>
+
+  <!-- PAGE 3 : VIDEO -->
+  <div class="page" id="page3">
+    <h2>🎥</h2>
+    <div class="white-box">
+      <video id="video" controls>
+        <source src="unbox.mp4" type="video/mp4">
+      </video>
+    </div>
+    <button class="btn" onclick="showPage(4)">NEXT</button>
+  </div>
+
+  <!-- PAGE 4 : QUESTION -->
+  <div class="page" id="page4">
+    <h2>DO YOU LOVE PAPOY? 💗</h2>
+    <button class="btn" onclick="showPage(5)">YES</button>
+    <button class="btn" onclick="showPage(0)">NO</button>
+  </div>
+
+  <!-- PAGE 5 : MESSAGE -->
+  <div class="page" id="page5">
+    <h2>💌</h2>
+    <div class="white-box">
+      <p>
+        ขอบคุณนะคะที่ทนอยู่กับเค้ามาตั้ง 1 ปี 2 เดือน อ้วนคงเหนื่อยแย่เลย ขอโทษที่งี่เง่า
+        ทำตัวไม่มีเหตุผล ทำให้ทะลาะกันบ่อยๆ แต่อยากให้รู้ว่าไม่เคยรักเธอน้อยลงเลย
+        ยังอยากมีเธออยู่ข้างๆในทุกๆวัน อยากให้อนาคตที่เราพูดกันมันเป็นจริง
+        เพราะงั้นอย่าปล่อยมือกันไปไหนนะคะ
+        จะพยายามไม่คิดมากเรื่องแม่หรือปัญหาอื่นๆนอกเหนือการความคุมของเรา
+        อยากให้รู้ว่าที่ผ่านมาเค้าเต็มที่กับเธอมาก ไม่เคยคิดจะนอกใจไปไหนเลย
+        เลิกระแวงได้แล่วว ในสายตาเค้ามีเธอคนเดียว
+        เว็บนี่ทำยากจัดเลย โฮร่ ่ แต่สุดท้ายมันก็เสดให้เธอได้อ่านน้ะ จุ๊บๆค่ะไออ้วน
+        มีอะไรบอกเค้าได้ตะเหม๋อนะ อยากเป็นเซฟโซนของแก อย่าเก็บไว้คนเดียว
+        เดี๋ยวระเบิดดด จะมอห้าแล้วก็เลิกทำตัวเป็นเด็กได้แล้วนะ 
+        ถ้าวันนึงมีคนถูกดูแลจากแกเหมือนแบบที่แกทำให้เค้า เค้าคงเสียใจแย่
+        ดีใจที่วันนั้นตัดสินใจทักไปนะคะ รักๆเธอมากไออ้วน จุ้บบบบบบบ💗
+      </p>
+    </div>
+    <button class="btn" onclick="showPage(6)">END</button>
+  </div>
+
+  <!-- PAGE 6 : END -->
+  <div class="page" id="page6">
+    <h2>HAPPY VALENTINE'S DAY and</h2>
+    <h2>GLAD TO HAVE U 1.2 YEAR NA KAA💗</h2>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
